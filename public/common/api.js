@@ -1,4 +1,5 @@
 import axios from 'axios' // 引用axios
+import apiUrl from './baseApi'
 export const apiAxios=(url)=>new Promise((resolve,reject)=>{
         axios.get(url).then(function(res){
               resolve(res);
